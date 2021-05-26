@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Rock Paper Scissors</h1>
+    </header>
+    <!-- CHOOSE ROUND -->
+    <form action="" class="form1">
+        <h1 id="allrounds"><span id="currentround">0</span><span>:</span><span id="maxround">0</span></h1>
+        <h1 id="finish">GAME FINISHED</h1>
+        <div id="roundsbox">
+            <h1>how many rounds?</h1>
+            <div>
+                <input value="5" type="radio" name="rounds" id="radio5" checked>5
+                <input value="10" type="radio" name="rounds" id="radio10">10 <br>
+                <input value="15" type="radio" name="rounds" id="radio15">15
+                <input value="20" type="radio" name="rounds" id="radio20">20
+            </div>
+            <input type="button" value="chooseround" onclick="choose()">
+        </div>
+    </form>
+
+    <!-- SCORE BOARD -->
+
+    <div class="score-board">
+        <div id="user-label" class="badge">User</div>
+        <div id="computer-label" class="badge">Comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>PLAY ROCK PAPER SCISSORS</p>
+    </div>
+
+    <!-- USER AND COMPUTER CHOICE -->
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="./assets/img/icons8-hand_-felsen-50.png" alt="">
+        </div>
+        <div class="choice" id="p">
+            <img src="./assets/img/icons8-ganze-hand-80.png" alt="">
+        </div>
+        <div class="choice" id="s">
+            <img src="./assets/img/icons8-hand_-schere-50.png" alt="">
+        </div>
+    </div>
+
+    <p id="action-message">Make your move!</p>
+
+    <!-- NEW GAME -->
+
+    <button id="newgame" onclick="reset()">NEW GAME</button>
+
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
